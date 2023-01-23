@@ -1,7 +1,22 @@
+<script>
+import { Swiper, SwiperSlide } from "swiper/vue";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+export default {
+    components: {
+        Swiper,
+        SwiperSlide,
+    },
+};
+</script>
 <script setup>
 import Layout from "../Layouts/Layout.vue";
 import Menu_Right from "@/Components/pages/menus/Menu_Right.vue";
 import ItemCourse from "../Components/cards/ItemCourse.vue";
+import { Navigation, Pagination } from "swiper";
 
 const props = defineProps({
     canResetPassword: Boolean,
@@ -22,10 +37,33 @@ const props = defineProps({
                     </ul>
                 </div>
             </div> -->
-
-        <div class="flex">
+        <swiper
+            :modules="[Navigation, Pagination]"
+            :slides-per-view="1"
+            :space-between="50"
+            :navigation="true"
+            :pagination="{ clickable: true }"
+        >
+            <swiper-slide
+                ><img
+                    src="/images/carrusel/banner_hair-care.jpg"
+                    class="text-center object-cover w-full"
+            /></swiper-slide>
+            <swiper-slide
+                ><img
+                    src="/images/carrusel/banner_hair-color.jpg"
+                    class="text-center object-cover w-full"
+            /></swiper-slide>
+            <swiper-slide
+                ><img
+                    src="/images/carrusel/banner_salon-treatment.jpg"
+                    class="text-center object-cover w-full"
+            /></swiper-slide>
+            ...
+        </swiper>
+        <!--<div class="flex">
             <img src="/images/a.png" class="text-center object-cover w-full" />
-        </div>
+        </div>-->
         <p class="title-last-curso mt-10">TUS ÚLTIMOS CURSOS</p>
         <div class="line-d"></div>
         <div
