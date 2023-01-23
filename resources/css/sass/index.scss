@@ -1,0 +1,20 @@
+
+//colors
+$white:#ffffff;
+$gris-light:#D9D9D9;
+$gris-dark:#828282;
+$gris-medium:#707070;
+$gris-69:#696969;
+
+@import 'login.scss';
+@import 'general.scss';
+@import 'sidebar.scss';
+@import 'look.scss';
+@import 'event.scss';
+@import 'marketing.scss';
+
+.bg-lsg{
+    background: orange;
+    width: 100%;
+    height: 50px;
+}

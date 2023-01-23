@@ -1,0 +1,74 @@
+$m-black:#000000;
+$m-white:#ffffff;
+
+.mar_card {
+    background: $m-black;
+    border: 1px solid $m-black;
+
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+
+.mar_card_title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $m-white;
+}
+
+.mar_card_sub {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: $m-white;
+}
+
+
+//digital
+
+.digital-image{
+    width: 434px;
+    height: 226px;
+}
+
+.digital-card-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    color: #707070;
+}
+
+.digital-card-content {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #707070;
+
+}
+
+.digital-btn {
+    background: #B0B1B1;
+    border-radius: 13px;
+    color: white;
+    font-weight: 600;
+}
+
+.digital-btn:hover {
+    background: #939494;
+}
+@media only screen and (max-width: 600px) {
+    .digital-card-title {
+      font-size: 15px;
+    }
+    .digital-card-content {
+      font-size: 13px;
+    }
+  }

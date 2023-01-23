@@ -1,0 +1,119 @@
+$black:#000000;
+
+.event_card {
+    width: 240px;
+    background: $white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.event_card img {
+    width: 100%;
+    height: 158px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.event_card_number {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+
+    color: $black;
+}
+
+.event_card-title {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #102A46;
+
+}
+
+.event_card-number-event {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #707070;
+}
+
+
+//show
+.event_card-show {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+}
+
+.event_card-show-number {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+    color: $black;
+}
+
+.event_card-show-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: $black;
+
+}
+
+.event_card-show-date {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $black;
+}
+
+.event_card-show-detail {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: justify;
+    color: $black;
+}
+
+.event_card-show-btn-ins {
+    background: #828282;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .event_card-show-number{
+        font-size: 30px;
+    }
+    .event_card-show-title{
+        font-size: 20px;
+    }
+    .event_card-show-date{
+        font-size: 12px;
+    }
+    .event_card-show-detail{
+        font-size: 13px;
+    }
+  }
